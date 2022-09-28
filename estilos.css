@@ -19,7 +19,7 @@
    }
 
 .navegador{ grid-area:nav;
-            color: greenyellow;
+            color: black;
             background-color: rgb(249, 245, 245);
             border-radius: 2em;
             padding: 1em;
