@@ -4,7 +4,7 @@
 .contenedor_index{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 10% 30% 20% 10% 30%;
+    grid-template-rows: 15% 30% 25% 20% 10%;
     /*grid-template: 7em 35em 16em 35em 10em/auto auto auto auto;   primero filas / columnas */
     grid-template-areas: "nav nav nav nav"
                          "hola hola hola hola"
@@ -25,6 +25,10 @@
             padding: 1em;
             box-shadow: 5px 5px 5px rgb(144, 139, 139);
             opacity: 1;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
 
 }
 
@@ -34,6 +38,7 @@
     border-radius: 2em;
     padding: 1em;
     opacity: 0;
+    display: flex;
 
 }
 
@@ -61,5 +66,17 @@
 
 }
 
+.formulario_1{
 
+}
 
+.portada{
+
+}
+
+div.navegador div.item_logo img{
+   height: 4rem;
+    width: 4rem;
+    padding: 0.5rem;
+
+}
