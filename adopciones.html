@@ -18,21 +18,42 @@
         <div class="hola">
         <form action="" class="form" method="post">
            <h2 class="form_title">Encontra tu Perrihijo</h2>
-           <h4 class="form_paragraph">Completa tus preferencias y te enviaremos la mejor opcion de adopción.</h4>
+           <h4 class="form_paragraph">Completa tus datos y te consultá por el perrito que quieras.</h4>
            <div class="form_container">
             <div class="form_group">
 
-                <label for="name" class="form_label">Nombre: </label>
+                <div class="form_g1">
                 <input type="text" class="form_input" id="name" placeholder=" " autocomplete="off">
+                <label for="name" class="form_label">Nombre: </label>
                 <span class="form_line"></span>
+                </div>
 
-                <label for="apellido" class="form_label">Apellido: </label>
+                <div class="form_g1">
                 <input type="text" class="form_input" id="apellido" placeholder=" ">
+                <label for="apellido" class="form_label">Apellido: </label>
                 <span class="form_line"></span>
+                </div>
 
+                <div class="form_g1">
+                <input type="email" class="form_input" id="mail" placeholder=" ">   
                 <label for="mail" class="form_label">Correo: </label>
-                <input type="email" class="form_input" id="mail" placeholder=" ">
                 <span class="form_line"></span>
+                </div>
+
+                <div class="form_g1">
+                
+                <select id="perrito" name="animalito" class="form_input" >
+                <option disabled selected>Seleccioná tu perrito flechazo</option> 
+                  <option value="jack_miller">Jack</option>
+                  <option value="toby">Toby</option>
+                  <option value="pelusa">Pelusa</option>
+                
+                </select>
+                <label for="animalito" class="form_label">Perrito</label>
+                </div>
+
+
+
                 <br>
 
                 <input type="submit" class="form_submit" Value="Enviar Solicitud">
