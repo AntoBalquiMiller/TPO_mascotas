@@ -1,30 +1,39 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+body{min-height: 100vh;
+}
+
+*, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
 
 .contenedor_index{
     display: grid;
+    background-image:  radial-gradient(#d0ca10 0.6px, transparent 0.6px), radial-gradient(#d0ca10 0.6px, #f9f9f9 0.6px);
+    background-size: 20px 20px;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 15% 30% 25% 20% 10%;
-    /*grid-template: 7em 35em 16em 35em 10em/auto auto auto auto;   primero filas / columnas */
+    grid-template-rows: 15% 120% 129% 10%;
+   
     grid-template-areas: "nav nav nav nav"
                          "hola hola hola hola"
                          "mascotas mascotas mascotas mascotas"
-                         "servicios servicios servicios servicios"
                          "footer footer footer footer";
     height: 100vh;
-    grid-gap: 1em;
-    background-color: #e5e5f7;
-    opacity: 0.65;
-    background: linear-gradient(135deg, #d2d96d55 25%, transparent 25%) -36px 0/ 72px 72px, linear-gradient(225deg, #d2d96d 25%, transparent 25%) -36px 0/ 72px 72px, linear-gradient(315deg, #d2d96d55 25%, transparent 25%) 0px 0/ 72px 72px, linear-gradient(45deg, #d2d96d 25%, #e5e5f7 25%) 0px 0/ 72px 72px;
-   }
+    grid-gap: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .navegador{ grid-area:nav;
             color: black;
-            background-color: rgb(249, 245, 245);
+            background-color: rgb(251, 248, 248);
             border-radius: 2em;
             padding: 1em;
             box-shadow: 5px 5px 5px rgb(144, 139, 139);
-            opacity: 1;
             display: flex;
             justify-content: flex-start;
             flex-direction: row;
@@ -32,45 +41,32 @@
 
 }
 
-.hola{ grid-area:hola;
-    color: rgb(11, 10, 10);
-    background-color: rgb(237, 246, 240);
+.hola{ background-color: transparent;
+    grid-area:hola;
+    display: flex;
+    justify-content:space-evenly ;
+    border-radius: 2em;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: row;
+    
+}
+.mascotas{grid-area:mascotas;}
+.footer{ grid-area:footer;
+    color: rgb(13, 13, 13);
+    background-color:transparent;
     border-radius: 2em;
     padding: 1em;
-    opacity: 0;
     display: flex;
 
 }
 
-.mascotas{ grid-area:mascotas;
-    color: rgb(11, 10, 10);
-    background-color: rgb(232, 146, 219);
-    border-radius: 2em;
-    padding: 1em;
-    opacity: 0;
-}
 
-.servicios{ grid-area:servicios;
-    color: rgb(9, 9, 9);
-    background-color: rgb(241, 82, 135);
-    border-radius: 2em;
-    padding: 1em;
-
-}
-
-.footer{ grid-area:footer;
-    color: rgb(13, 13, 13);
-    background-color: rgb(216, 246, 226);
-    border-radius: 2em;
-    padding: 1em;
-
-}
-
-.formulario_1{
-
-}
-
-.portada{
+div.hola img.yorkie{
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px -5px  rgb(6 6  6);
 
 }
 
@@ -80,3 +76,89 @@ div.navegador div.item_logo img{
     padding: 0.5rem;
 
 }
+
+div.hola form.form{background-color: white;
+    background: linear-gradient(15deg, #fff300, rgba(255,233,143,1));
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px  rgb(17 17 17 / 30%);
+    text-align: center;
+    width: 45%;
+    padding: 4.5em 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+
+
+}
+
+h2 , h4.form_paragraph{
+    font-weight: 700;
+    color:rgb(59, 155, 229) ;
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+
+}
+
+.form_group{
+--color: #5757577e;
+}
+
+.form_g1{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 0.3rem;
+}
+.form_input{
+    width: 90%;
+    height: 90%;
+    background: white;
+    color: rgb(36, 34, 34);
+    font-size: 0.8rem;
+    padding: 0.7em .4em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+}
+.form_input:focus + .form_label {
+    transform:scale(1);
+    color: rgb(33, 154, 190);
+}
+
+
+.form_label{
+    color: var(--color);
+    font-weight: 500;
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: transform .5s color .3s;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #228dea;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
