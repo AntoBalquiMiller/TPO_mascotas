@@ -1,89 +1,154 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
-body{min-height: 100vh;
+body{
+    color: white;
+    background-image:  radial-gradient(#d0ca10 0.6px, transparent 0.6px), radial-gradient(#d0ca10 0.6px, #f9f9f9 0.6px);
+    background-size: 25px 25px;
 }
 
 *, ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+
 }
+
 
 .contenedor_index{
     display: grid;
-    background-image:  radial-gradient(#d0ca10 0.6px, transparent 0.6px), radial-gradient(#d0ca10 0.6px, #f9f9f9 0.6px);
-    background-size: 20px 20px;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 15% 120% 129% 10%;
-   
+    grid-template-rows: 15% 100% 50% 20% 10%;
+    /*grid-template: 7em 35em 16em 35em 10em/auto auto auto auto;   primero filas / columnas */
     grid-template-areas: "nav nav nav nav"
                          "hola hola hola hola"
                          "mascotas mascotas mascotas mascotas"
+                         "servicios servicios servicios servicios"
                          "footer footer footer footer";
     height: 100vh;
     grid-gap: 2em;
+    padding-left: 6em; 
+    padding-right: 6em;  
+    padding-top: 3em;  
     font-family: 'Roboto', sans-serif;
-}
 
+}
 
 .navegador{ grid-area:nav;
             color: black;
-            background-color: rgb(251, 248, 248);
+            background-color: rgb(249, 245, 245);
             border-radius: 2em;
             padding: 1em;
             box-shadow: 5px 5px 5px rgb(144, 139, 139);
+            opacity: 1;
             display: flex;
             justify-content: flex-start;
             flex-direction: row;
             align-items: center;
+            font-size: 1.5em;
+            font-family: sans-serif; 
+
 
 }
 
-.hola{ background-color: transparent;
-    grid-area:hola;
+.navegador a {
+    padding-left: 3em;
+    text-decoration: none;
+}
+.hola{ grid-area:hola;
     display: flex;
     justify-content:space-evenly ;
     border-radius: 2em;
     align-items: center;
-    box-sizing: border-box;
-    flex-direction: row;
+    background: #d1bea3;
+    padding-right: 2em;
+    padding-left: 2em;
     
 }
-.mascotas{grid-area:mascotas;}
-.footer{ grid-area:footer;
-    color: rgb(13, 13, 13);
-    background-color:transparent;
+
+.mascotas{ grid-area:mascotas;
+    color: rgb(11, 10, 10);
+    background-color: rgb(152, 94, 32);
+    border-radius: 2em;
+    padding: 1em;
+    display: flex;
+    
+}
+
+.servicios{ grid-area:servicios;
+    color: rgb(9, 9, 9);
+    background-color: rgb(246, 233, 237);
     border-radius: 2em;
     padding: 1em;
     display: flex;
 
 }
 
+.footer{ grid-area:footer;
+    color: rgb(13, 13, 13);
+    background-color: rgb(216, 246, 226);
+    border-radius: 2em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
 
 div.hola img.yorkie{
-    width: 30%;
-    height: 80%;
+    width: 20em;
+    height:30em;
     border-radius: 20px;
     box-shadow: 0 5px 10px -5px  rgb(6 6  6);
 
 }
 
 div.navegador div.item_logo img{
-   height: 4rem;
-    width: 4rem;
+   height: 5rem;
+    width: 5rem;
     padding: 0.5rem;
 
 }
+a:link{
+    color: #4c20ea;
+}
+a:visited{
+    color:rgb(45, 55, 237);
+}
+a:hover{
+    color: rgb(175, 167, 11);
+}
+a:active{
+    color: rgb(76, 0, 255);
+}
+.nav{
+    align-content: center;
+}
+
+div.mascota img.perrito_mediacara{
+   
+    border-radius: 20px;
+    box-shadow: 0 5px 10px -5px  rgb(6 6  6);
+
+}
+
+/* Aca van cambios de anto */
+
+
+div.hola img.perrin{
+    width: 30%;
+    height: 80%;
+    width: 20em;
+    height:25em;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px -5px  rgb(6 6  6);}
+
 
 div.hola form.form{background-color: white;
     background: linear-gradient(15deg, #fff300, rgba(255,233,143,1));
-    height: 80%;
+    height:100%;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px  rgb(17 17 17 / 30%);
     text-align: center;
-    width: 45%;
     padding: 4.5em 3em;
     text-align: center;
     display: flex;
@@ -106,20 +171,17 @@ h2 , h4.form_paragraph{
 .form_container{
     margin-top: 3em;
     display: grid;
-    gap: 2.5em;
+    gap: 2.5em;}
 
-}
-
-.form_group{
---color: #5757577e;
+.form_group {--color: #5757577e;
 }
 
 .form_g1{
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-    padding: 0.3rem;
-}
+    padding: 0.3rem;}
+
 .form_input{
     width: 90%;
     height: 90%;
@@ -132,13 +194,17 @@ h2 , h4.form_paragraph{
     outline: none;
     border-bottom: 1px solid var(--color);
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 300;}
 
-}
+
 .form_input:focus + .form_label {
     transform:scale(1);
-    color: rgb(33, 154, 190);
-}
+    color: rgb(33, 154, 190);}
+
+div.mascota img.perrito_mediacara{
+
+    border-radius: 20px;
+    box-shadow: 0 5px 10px -5px  rgb(6 6  6);}
 
 
 .form_label{
@@ -161,4 +227,5 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
+
 
