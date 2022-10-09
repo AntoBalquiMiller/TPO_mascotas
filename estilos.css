@@ -85,7 +85,6 @@ body{
 
 .footer{ grid-area:footer;
     color: rgb(13, 13, 13);
-    background-color: rgb(216, 246, 226);
     border-radius: 2em;
     padding: 1em;
     display: flex;
