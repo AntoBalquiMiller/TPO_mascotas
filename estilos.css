@@ -1,9 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
 body{
-    color: white;
-    background-image:  radial-gradient(#d0ca10 0.6px, transparent 0.6px), radial-gradient(#d0ca10 0.6px, #f9f9f9 0.6px);
-    background-size: 25px 25px;
+    color: rgb(255, 255, 255);
+    background-image:  radial-gradient(#f4ec04 1.5px, transparent 0.9px), radial-gradient(#d0ca10 0.9px, #ffffff 0.6px);
+    background-size: 35px 35px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,7 +38,7 @@ body{
 
 .navegador{ grid-area:nav;
             color: black;
-            background-color: rgb(249, 245, 245);
+            background-color: rgb(255, 255, 255);
             border-radius: 2em;
             padding: 1em;
             box-shadow: 5px 5px 5px rgb(125, 171, 212);
@@ -233,12 +233,12 @@ input[type=submit] {
   .contenedor_adopciones{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 15% 100% 270% 20% 10%;
+    grid-template-rows: 15% 100% 270% 80% 10%;
     /*grid-template: 7em 35em 16em 35em 10em/auto auto auto auto;   primero filas / columnas */
     grid-template-areas: "nav nav nav nav"
                          "formu formu formu formu"
                          "adopta adopta adopta adopta"
-                         "servicios servicios servicios servicios"
+                         "colabora colabora colabora colabora"
                          "footer footer footer footer";
     height: 100vh;
     grid-gap: 2em;
@@ -284,8 +284,10 @@ div.formu img.perrin{
   
 
 .adopta{ grid-area:adopta;
-        color: rgb(11, 10, 10);
-        background: linear-gradient(45deg,#fdba61,#c973f8);
+        /* color: rgb(11, 10, 10); */
+        /* background: linear-gradient(45deg,#fdba61,#c973f8); */
+        background: rgb(218,235,50);
+        background: linear-gradient(27deg, rgba(218,235,50,1) 0%, rgba(238,246,89,1) 20%, rgba(142,223,240,1) 53%, rgba(0,113,255,1) 91%);
         border-radius: 2em;
         padding: 1em;
         display: flex;
@@ -449,5 +451,98 @@ flex-wrap: wrap;
     position: relative;
     top: 20px;
     
+
+}
+
+
+.colabora{ grid-area:colabora;
+    color: rgb(9, 9, 9);
+    background-color: transparent;
+    border-radius: 2em;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+
+}
+
+.card_colabora{display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:flex-start;
+    align-content: center;
+    }
+
+.card_colab{
+    position: relative;
+    width: 230px;
+    height: 230px;
+    
+    border-radius: 20px;
+    padding-bottom: 15em;
+    margin: 1.6em;
+}
+
+.colabora .subhead_colabora{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    
+
+}
+
+.colabora .subhead_colabora h2{
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(23, 22, 22);
+    line-height: 1.2em;
+    top:-30px;
+    font-family: Roboto;
+
+}
+
+.colabora .subhead_colabora h3 {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: rgb(75, 77, 79);
+    line-height: 1.2em;
+    top:-30px;
+    font-family: Roboto;
+}
+
+.colabora .subhead_colabora h3 img{
+    width:70px;
+    height:70px;
+    left: 20px;
+   
+    
+
+}
+
+.card_colabora .card_colab img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.enunciado{
+    position: relative;
+    font-size: 1;
+    font-weight: 700;
+    color: rgb(15, 16, 17);
+    line-height: 1.2em;
+    top:-40px;
+    font-family: Roboto;
+    left:50px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    text-align: center;
+    padding: 7px;
+    box-shadow: 5px 10px rgba(190, 207, 65, 0.5);
+
 
 }
