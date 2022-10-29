@@ -546,3 +546,12 @@ flex-wrap: wrap;
 
 
 }
+
+.warnings{
+    font-size: small;
+    width: 100px;
+    text-align: center;
+        margin: auto;
+        color: #5d79e9;
+        padding-top: 20px;
+}
