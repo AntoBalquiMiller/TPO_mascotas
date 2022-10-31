@@ -1,0 +1,368 @@
+
+
+
+
+body{  
+    color: green;
+    background-color: #ffffff;
+    background-image:  radial-gradient(#a29bfe 0.45px, transparent 0.45px), radial-gradient(#a29bfe 0.45px, #ffffff 0.45px);
+    background-size: 18px 18px;
+    background-position: 0 0,9px 9px;
+    font-family: sans-serif;
+    align-items: center;
+    
+    
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 5px auto; 
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:"nav nav nav"
+                        "hola hola mascotas"
+                        "perro gato cuis"
+                        "encabezado2 encabezado2 encabezado2"
+                        "productos adopcion spa"
+                        "footer footer footer";
+                      
+                
+
+}
+.contenedor .nav {
+    grid-area: nav;
+    background: white;
+    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center ;
+    justify-content: space-evenly;
+    border-radius: 2em;
+    padding: 1em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .encabezado2 {
+    grid-area: encabezado2;
+    background: rgb(246, 199, 60);
+    color: rgb(129, 108, 63) ;
+    display: flex;
+    border-radius: 2em;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    
+
+}
+
+
+.contenedor .hola{
+    grid-area: hola;
+    display: flex;
+    background: white;
+    height: 200px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    text-align: center;
+    padding: 1em 1em 1em 1em;
+    font-size: 90%;
+}
+.contenedor .mascotas :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .mascotas{
+    grid-area: mascotas;
+    display: flex;
+    background: white;
+    height: 230px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .perro :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    border-radius: 2em;
+}
+.contenedor .perro{
+    grid-area: perro;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .gato :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    border-radius: 2em;
+}
+.contenedor .gato{
+    grid-area: gato;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+
+
+.contenedor .cuis :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    border-radius: 2em;
+}
+.contenedor .cuis{
+    grid-area: cuis;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+
+.contenedor .productos :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+
+.contenedor .productos{
+    grid-area: productos;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+
+
+.contenedor .adopcion:hover{
+    
+    transform: scale(1.1);
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .adopcion{
+    grid-area: adopcion;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.adopcion p {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px blue;
+}
+.contenedor .spa :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .spa{
+    grid-area: spa;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.spa p {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px blue;
+
+}
+
+a:link{
+    color: rgb(47,96,119);
+}
+a:visited{
+    color:rgb(47,96,119);
+}
+a:hover{
+    color: rgb(166, 131, 54);
+}
+a:active{
+    color: rgb(47, 96, 119);
+}
+.mascotas img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 2em;
+    align-items: center;
+
+}
+.perro img {
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 2em;
+    align-items: center;
+}
+.gato img {
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 2em;
+    align-items: center;
+}
+.cuis img {
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 2em;
+    align-items: center;
+}
+.encabezado2{
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 2em;
+    align-items: center;
+
+}
+.productos a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+    border-radius: 2em;
+    align-items: center;
+
+}
+.adopcion a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+    align-content: center;
+}
+.spa a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+    align-items: center;
+}
+.contenedor .footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2em;
+    background: rgb(247, 191, 63);
+    padding: 1em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+
+
+        
+            
+        
+}
+@media screen and (max-width : 760px){
+        .contenedor{
+                grid-template-areas:"nav"
+                                "hola"
+                                "mascotas"
+                                "perro"
+                                "gato"
+                                "cuis"
+                                "encabezado2"
+                                "productos"       
+                                "adopcion"
+                                "spa"
+                                "footer";
+                row-gap: 60px;                
+                grid-template-columns: repeat(1,auto);
+                
+        }
+        
+        .encabezado2{
+                font-size: 50%;
+        }
+        .nav{
+                font-size: 60%;
+        }
+        .contenedor .hola{
+            grid-area: "hola";
+            display: flex;
+            background: white;
+            border-radius: 2em;
+            box-shadow: 5px 5px 5px rgb(41, 117, 216);
+            text-align: center;
+            padding: 1em 1em 1em 1em;
+            font-size: 70%;
+                
+        }
+        .contenedor{
+            align-items: center;
+            align-content:  center;
+        }
+
+        .productos{
+            grid-area: "productos";
+            align-self: center;
+            justify-self: center;
+        }
+    
+        
+        .perro{
+            grid-area: "perro";
+            align-self: center;
+            justify-self: center; }
+
+
+        .gato{
+            grid-area: "gato";
+            align-self: center;
+            justify-self: center;
+        }
+        .cuis{
+            align-self: center;
+            justify-self: center;
+        }
+        
+        
+        .adopcion{
+            grid-area: "adopcion";
+            align-self: center;
+            justify-self: center;
+        }
+        .spa{
+            grid-area: "spa";
+            align-self: center;
+            justify-self: center;
+    
+        }
+        .productos a img {
+            object-fit: cover;
+            /* height: 100%; */
+            width: 100%; 
+            border-radius: 2em;
+            align-items: center;
+        }    
+            
+            
+        .mascotas{grid-area: "mascotas";
+            align-self: center;
+            justify-self: center;
+
+        }
+
+        .yorkie img {
+            object-fit: cover;
+            width: 100%; 
+            border-radius: 2em;
+            align-items: center;
+        }
+                    
+    }
+            
+
+    
+
