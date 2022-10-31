@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos_adopciones.css">
     <title>WoofWoof Adopciones</title>
 </head>
 <body>
@@ -17,9 +17,9 @@
             <a href="adopciones.html">Adopciones</a>
             <a href="Vacaciones_mascotas.html">Hoteles para mascotas</a>
         </div>
-
+        <!--  -->
         <div class="formu">
-        <form action="https://formspree.io/f/mknevlqk" class="form" method="POST">
+        <form  class="form" action="https://formspree.io/f/mknevlqk" method="POST" id="form">
            <h2 class="form_title">Encontra tu Perrihijo</h2>
            <h4 class="form_paragraph">Completa tus datos y te consultá por el perrito que quieras.</h4>
            <div class="form_container">
@@ -49,19 +49,24 @@
                   <option value="jack_miller">Jack</option>
                   <option value="toby">Toby</option>
                   <option value="pelusa">Pelusa</option>
-                
+                  <option value="pelusa">Jorgito</option>
+                  <option value="pelusa">Margarita</option>
+                  <option value="pelusa">Lala</option>
                 </select>
                 <label for="animalito" class="form_label">Perrito</label>
                 </div>
                 <br>
                 <input type="submit" class="form_submit" Value="Enviar Solicitud">
                 <span class="form_line"></span>
+                <p class="warnings" id="warnings"></p>
 
                 </div>
 
            </div>
         </form>
-            <img class="perrin" src="img/babydog.jpg" alt="imagen yorkie">
+        <div class="perrinid" id="imgperrin">
+            <img class="perrin"  src="img/babydog.jpg" alt="imagen yorkie">
+        </div>
         </div>
 
 
@@ -205,55 +210,55 @@
             </div>
         </div>
 
-
-        <div class="colabora">
-            <div class="subhead_colabora">
+        <div class="subhead_colabora">
             <h2>¿De que maneras colaborar?</h2>
             <h3> Convierteté en Hadamadrina o Hadapadrino <img src="img/hada.png" alt=""></h3>
-            
         </div>
+
+        <div class="colabora1">
             <div class="card_colabora">
 
                 <div class="card_colab">
-                <img src="img/adopciones/pet-food (1).png" alt="">
+                    <img src="img/adopciones/pet-food (1).png" alt="">
                 
                     <div class="enunciado"> Doná alimento</div>
-                    
                 </div>
 
-                    <div class="card_colab">
+                <div class="card_colab">
                     <img src="img/adopciones/ambulance.png" alt="">
                     
-                        <div class="enunciado"> Doná gastos medicos</div>
+                    <div class="enunciado"> Doná gastos medicos</div>
                         
-                    </div>
-
-
-                        <div class="card_colab">
-                        <img src="img/adopciones/walking-the-dog.png" alt="">
-                        
-                            <div class="enunciado"> Paseanos</div>
-                            
-                        </div>
-
-                        <div class="card_colab">
-                        <img src="img/adopciones/pet-taxi.png" alt="">
-                            
-                        <div class="enunciado">Traslados y Rescates</div>
-                        </div>
+                </div>
             </div>
-        </div>
+        </div>     
 
+                <div class="colabora2">
+                    <div class="card_colabora">
+                        <div class="card_colab">
+                            <img src="img/adopciones/walking-the-dog.png" alt="">
+                            <div class="enunciado"> Paseanos</div> 
+                        </div>
 
+                        <div class="card_colab">
+                            <img src="img/adopciones/pet-taxi.png" alt="">  
+                            <div class="enunciado">Traslados y Rescates</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
 
         <div class="footer">
-            <a href="https://es-la.facebook.com/"><img src="img/fei.png" alt="" width="50" ></a>
-            <a href="https://twitter.com/?lang=es"><img src="img/twitter.png" alt="" width="50"></a>
-            <a href="https://www.instagram.com/"><img src="img/Ins.png" alt="" width="50"></a>
+            <a href="https://es-la.facebook.com/"><img src="img/fei.png" alt="" ></a>
+            <a href="https://twitter.com/?lang=es"><img src="img/twitter.png" alt="" ></a>
+            <a href="https://www.instagram.com/"><img src="img/Ins.png" alt="" ></a>
         </div>
         
     </section>
-
+<script  src="formulario.js">
+    
+</script>
 
 
 </body>

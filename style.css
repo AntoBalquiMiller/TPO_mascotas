@@ -1,0 +1,421 @@
+body{
+    color: green;
+    background-color: #ffffff;
+    background-image:  radial-gradient(#a29bfe 0.45px, transparent 0.45px), radial-gradient(#a29bfe 0.45px, #ffffff 0.45px);
+    background-size: 18px 18px;
+    background-position: 0 0,9px 9px;
+    font-family: sans-serif;
+    
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:"nav nav nav nav"
+                        "encabezado1 encabezado1 encabezado1 encabezado1"
+                        "spa1 spa2 spa3 spa4"
+                        "encabezado2 encabezado2 encabezado2 encabezado2"
+                        "hotel1 hotel2 hotel3 hotel4"
+                        "hotel5 hotel6 hotel7 hotel8"
+                        "footer footer footer footer";
+
+}
+.contenedor .nav {
+    grid-area: nav;
+    background: white;
+    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center ;
+    justify-content: space-evenly;
+    border-radius: 2em;
+    padding: 1em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .encabezado1 {
+    grid-area: encabezado1;
+    background: rgb(246, 199, 60);
+    color: rgb(129, 108, 63) ;
+    display: flex;
+    border-radius: 2em;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    
+
+}
+.contenedor .spa1 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .spa1{
+    grid-area: spa1;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .spa2 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .spa2{
+    grid-area: spa2;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .spa3 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .spa3{
+    grid-area: spa3;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .spa4 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .spa4{
+    grid-area: spa4;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .encabezado2{
+    grid-area: encabezado2;
+    background: rgb(246, 199, 60);
+    color: rgb(129, 108, 63);
+    display: flex;
+    border-radius: 2em;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+
+}
+.contenedor .hotel1 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .hotel1{
+    grid-area: hotel1;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.hotel1 p {
+    position: relative;
+    top: -45px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-shadow: 3px 3px 2px rgb(104, 104, 255);
+}
+.contenedor .hotel2 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    top:-2em;
+}
+
+.contenedor .hotel2{
+    grid-area: hotel2;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    
+}
+.hotel2 p {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px blue;
+    top: -45px;
+}
+.contenedor .hotel3 :hover{
+    
+    transform: scale(1.1);
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .hotel3{
+    grid-area: hotel3;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.hotel3 p {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px blue;
+    top: -45px;
+}
+.contenedor .hotel4 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .hotel4{
+    grid-area: hotel4;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.hotel4 p {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px blue;
+    top: -45px;
+
+}
+.contenedor .hotel5 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .hotel5{
+    grid-area: hotel5;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.hotel5 p {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px blue;
+    top: -45px;
+
+
+}
+.contenedor .hotel6 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .hotel6{
+    grid-area: hotel6;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.hotel6 p {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px blue;
+    top: -45px;
+
+}
+.contenedor .hotel7 :hover{
+    
+    transform: scale(1.1);
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .hotel7{
+    grid-area: hotel7;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.hotel7 P {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px blue;
+    top: -45px;
+
+}
+.contenedor .hotel8 :hover{
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.contenedor .hotel8{
+    grid-area: hotel8;
+    display: flex;
+    background: white;
+    height: 250px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.hotel8 p {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 2px blue;
+    top: -45px;
+    
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2em;
+    background: rgb(247, 191, 63);
+    padding: 1em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+a:link{
+    color: rgb(47,96,119);
+}
+a:visited{
+    color:rgb(47,96,119);
+}
+a:hover{
+    color: rgb(166, 131, 54);
+}
+a:active{
+    color: rgb(47, 96, 119);
+}
+.spa1 a img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+
+}
+.spa2 a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+.spa3 a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+.spa4 a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+.hotel1 a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+.hotel2 a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+.hotel3 a img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+}
+.hotel4 a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+.hotel5 a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+.hotel6 a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+.hotel7 a img {
+    object-fit: cover;
+    max-width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+.hotel8 a img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;
+    border-radius: 2em;
+}
+  
+@media screen and (max-width : 768px){
+    .contenedor{
+        grid-template-areas:"nav nav nav nav"
+                        "encabezado1 encabezado1 encabezado1 encabezado1"
+                        "spa1 spa1 spa2 spa2"
+                        "spa3 spa3 spa4 spa4"
+                        "encabezado2 encabezado2 encabezado2 encabezado2"
+                        "hotel1 hotel1 hotel2 hotel2"
+                        "hotel3 hotel3 hotel4 hotel4"       
+                        "hotel5 hotel5 hotel6 hotel6"
+                        "hotel7 hotel7 hotel8 hotel8"
+                        "footer footer footer footer";
+        row-gap: 60px;                
+
+        
+    }
+    .encabezado1{
+        font-size: 50%;
+    }
+    .encabezado2{
+        font-size: 50%;
+    }
+    .nav{
+        font-size: 50%;
+    }
+    
+        
+    }
+
+    
+
+
+
+
+    
+
+

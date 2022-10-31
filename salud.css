@@ -1,0 +1,180 @@
+body{
+    color: green;
+    background: rgb(125, 171, 212);
+    background-color: #ffffff;
+
+    background-image:  radial-gradient(#a29bfe 0.45px, transparent 0.45px), radial-gradient(#a29bfe 0.45px, #ffffff 0.45px);
+    background-size: 18px 18px;
+    background-position: 0 0,9px 9px;
+    font-family: sans-serif;
+    align-items: center;
+    
+}
+#contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns:repeat(3,auto);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:"nav nav"
+                        "encabezado1 encabezado1"
+                        "clinicas0 clinicas0"
+                        "clinica1 clinica2"
+                        "clinica3 clinica4"
+                        "encabezado2 encabezado2"
+                        "entre1 entre2"
+                        "entre3 entre4"
+                        "footer footer";
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+
+}
+
+.nav {
+    grid-area: nav;
+    background: white;
+    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center ;
+    justify-content: space-evenly;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+}
+.encabezado1 {
+    grid-area: encabezado1;
+    background: rgb(246, 199, 60);
+    color: rgb(129, 108, 63) ;
+    display: flex;
+    border-radius: 2em;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    padding: 2em;
+    justify-items: center;    
+
+}
+
+.encabezado2{
+    grid-area: encabezado2;
+    background: rgb(246, 199, 60);
+    color: rgb(129, 108, 63) ;
+    display: flex;
+    border-radius: 2em;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);
+    justify-items: center;
+
+}
+
+
+.clinicas0{
+    grid-area: clinicas0;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+
+
+}
+.clinicas0 img{
+    max-width: 89%;
+    border-radius: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 2em;
+    background: rgb(247, 191, 63);
+    padding: 1em;
+    box-shadow: 5px 5px 5px rgb(41, 117, 216);}
+
+.clinica1{
+    grid-area: clinica1;
+    display: flex;
+    margin-left: 2em;}
+
+ .clinica2{
+    grid-area: clinica2; 
+    display: flex;
+}    
+
+ .clinica3{
+    grid-area: clinica3; 
+    display: flex; 
+    margin-left: 2em;  }   
+
+ .clinica4{
+    grid-area: clinica4; 
+    display: flex;}
+
+ .entre1{
+    grid-area: entre1; 
+    display: flex;
+    margin-left: 2em} 
+
+ .entre2{
+    grid-area: entre2; 
+    display: flex;} 
+
+ .entre3{
+    grid-area: entre3; 
+    display: flex;
+    margin-left: 2em} 
+
+ .entre4{
+    grid-area: entre4; 
+    display: flex;} 
+
+.clinica1 img, .clinica2 img , .clinica3 img , .clinica4 img {
+    max-width:89%;
+    margin: 0;
+    padding: 0;
+}
+
+.entre1 iframe, .entre2 iframe , .entre3 iframe , .entre4 iframe{
+    max-width: 89%;
+
+}
+
+@media screen and (max-width : 900px){
+    #contenedor{
+        grid-template-areas:"nav nav"
+                        "encabezado1 encabezado1"
+                        "clinicas0 clinicas0"
+                        "clinica1 clinica1"
+                        "clinica2 clinica2"
+                        "clinica3 clinica3"
+                        "clinica4 clinica4"
+                        "encabezado2 encabezado2"
+                        "entre1 entre1"
+                        "entre2 entre2"       
+                        "entre3 entre3"
+                        "entre4 entre4"
+                        "footer footer";               
+
+        
+    }
+    .encabezado1{
+        font-size: 50%;
+    }
+    .encabezado2{
+        font-size: 50%;
+    }
+    .nav{
+        font-size: 50%;
+    }
+    .clinica1 , .clinica2 , .clinica3 , .clinica4{
+        display: flex;
+        margin-left: 3em;}
+
+        .entre1 , .entre2 , .entre3  , .entre4 {
+            margin-left: 3em;
+        
+        }
+        
+    }
